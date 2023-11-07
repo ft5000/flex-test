@@ -1,39 +1,41 @@
 body {
     background-color: black;
     font-family: consolas;
-    color: lightcyan;
-    text-shadow: 0 0 2px lightcyan, 0 0 2px lightcyan;
+    color: lime;
+    text-shadow: 0 0 2px lime, 0 0 2px lime;
+    overflow: hidden;
+}
+
+.row {
+    position: relative;
+    margin: auto;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 12px);
 }
 
 .column {
-    margin: auto;
+    margin-right: 12px;
     display: flex;
     flex-direction: column;
-    height: 98vh;
     width: 600px;
 }
 
 .card {
-    border: 2px lightcyan solid;
-    box-shadow: 0 0 4px lightcyan, 0 0 4px lightcyan;
+    border: 2px lime solid;
+    box-shadow: 0 0 4px lime, 0 0 4px lime;
     display: flex;
     flex-direction: column;
     padding: 12px;
     margin-bottom: 12px;
-}
-
-.dash {
-    width: 100%;
-    height: 2px;
-    border-bottom: 2px lightcyan dashed;
-    width: 100%;
-    margin-bottom: 12px;
+    max-height: fit-content;
 }
 
 .content {
     overflow: hidden;
     overflow-y: auto;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .card.max {
@@ -41,40 +43,24 @@ body {
 }
 
 .card.flex {
-    min-height: 0;
+    min-height: 100px;
 }
 
 .title {
     text-decoration: underline;
 }
 
-#skull-1 {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin-right: 100px;
-    margin-bottom: 40px;
-    width: 400px;
-    height: 800px;
-    opacity: 10%;
-    user-select: none;
-}
-
-#skull-2 {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin-left: 100px;
-    margin-bottom: 40px;
-    width: 400px;
-    height: 800px;
-    opacity: 10%;
-    user-select: none;
+.dash {
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px lime dashed;
+    width: 100%;
+    margin-bottom: 12px;
 }
 
 ::selection {
-    background: lightcyan;
-    box-shadow: 0 0 4px lightcyan, 0 0 4px lightcyan;
+    background: lime;
+    box-shadow: 0 0 4px lime, 0 0 4px lime;
     color: black;
 }
 
@@ -87,9 +73,9 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: lightcyan;
+    background: lime;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: lightcyan;
+    background: lime;
 }
