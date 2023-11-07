@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+    font-family: consolas;
+    color: lightcyan;
+    text-shadow: 0 0 2px lightcyan, 0 0 2px lightcyan;
+}
+
+.column {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+    width: 600px;
+}
+
+.card {
+    border: 2px lightcyan solid;
+    box-shadow: 0 0 4px lightcyan, 0 0 4px lightcyan;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.dash {
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px lightcyan dashed;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.content {
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.card.max {
+    min-height: fit-content;
+}
+
+.card.flex {
+    min-height: 0;
+}
+
+.title {
+    text-decoration: underline;
+}
+
+#skull-1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    width: 400px;
+    height: 800px;
+    opacity: 10%;
+    user-select: none;
+}
+
+#skull-2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    width: 400px;
+    height: 800px;
+    opacity: 10%;
+    user-select: none;
+}
+
+::selection {
+    background: lightcyan;
+    box-shadow: 0 0 4px lightcyan, 0 0 4px lightcyan;
+    color: black;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightcyan;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: lightcyan;
+}
